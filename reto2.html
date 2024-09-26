@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 2</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .Contenedor {
+            width: 50%;
+            margin: auto;
+            
+            display: flex;
+            max-height: 500px;
+
+        }
+
+        .columnIzq {
+            background-color: #D6D7DB;
+            width: 20%;
+            float: left;
+            height:auto;
+
+
+        }
+
+        .columnCentral {
+            background-color: darkblue;
+            float: none;
+            width: 40%;
+
+        }
+
+        .columnDer {
+            background-color: #D6D7DB;
+            float: right;
+            width: 40%;
+            padding: 25px;
+        }
+
+        .logo {
+            font-size: smaller;
+            color: #44AADD;
+            font-weight: bold;
+
+        }
+
+        h1 {
+            font-size: xx-large;
+        }
+
+        h3 {
+            color: #646767;
+            font-size: medium;
+        }
+
+        .size {
+            color: black;
+            margin-bottom: 0;
+        }
+
+        .precio{
+            font-size: xx-large;
+            font-weight: bold;
+            margin-bottom: 0px;
+        }
+
+        span{
+            background-color: #44AADD ;
+            font-size: small;
+            color: #1C3378;
+            padding: 5px;
+            border-radius: 5px;
+            vertical-align: middle;
+        }
+
+        .discount{
+            margin-top: 5px;
+            color: #646767;
+            text-decoration: line-through;
+        }
+
+        .sizes{
+            display: flex;
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 0;
+            
+        }
+
+        li{
+            padding: 15px;
+            font-weight: bold;
+        }
+
+        li:hover{
+            background-color: black;
+            color: white;
+        }
+
+       .boton{
+        width: 100%;
+        padding: 10px;
+        background-color: #1C3378;
+        color: white;
+        border-radius: 5px;
+        border-style: none;
+       }
+
+       .foto_frontal{
+        width: 100%;
+        height: 100%;
+       }
+
+       .collage{
+        list-style-type: none;
+        width: 100%;
+        height: 100%;
+       }
+
+       .foto{
+
+        width: fit-content;
+        height: 50px;
+       }
+
+       
+       
+    </style>
+</head>
+
+<body>
+    <div class="Contenedor">
+        <div class="columnIzq">
+            <ul class="collage">
+                <li class="foto"> <a href=""><img src="/imgs/camisa frente.jpeg" alt=""></a> </li>
+                <li class="foto"> <a href=""><img src="/imgs/camisa atras.jpeg" alt=""></a> </li>
+                <li class="foto"> <a href=""><img src="/imgs/camisa lateral.jpeg" alt=""></a> </li>
+            </ul>
+        </div>
+
+        <div class="columnCentral">
+            <img class="foto_frontal" src="/imgs/camisa frente.jpeg" alt="Camisa frontal">
+        </div>
+
+        <div class="columnDer">
+            <p class="logo">POLO RALPH</p>
+
+            <h1>Custom Fit Polo Bear Oxford Shirt</h1>
+            <h3>Blue polo with a classic cut. Made of smooth and soft cotton. </h3>
+
+            <p class="precio">$99.00 <span>-25%</span></p>
+            <p class="discount">$132.00</p>
+
+            <h3 class="size">CHOOSE SIZE</h3>
+            <ul class="sizes">
+                <li>S</li>
+                <li>M</li>
+                <li>L</li>
+                <li>XL</li>
+                <li>XXL</li>
+            </ul>
+
+            <footer class="foot">
+                <button class="boton">ADD TO BAG</button>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
